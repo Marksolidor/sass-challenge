@@ -1,6 +1,8 @@
 //
 // Base styles
 //
+@import url(./_variables.scss);
+@import url('https://fonts.googleapis.com/css2?family=Blaka&display=swap');
 
 .card {
   position: relative;
@@ -9,11 +11,16 @@
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
   height: $card-height;
   word-wrap: break-word;
-  background-color: $card-bg;
+  background-color: $gray-900;
   background-clip: border-box;
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
   @include box-shadow($card-box-shadow);
+
+p{
+color: $purple;
+font-family: $font-family-blaka;
+}
 
   > hr {
     margin-right: 0;
