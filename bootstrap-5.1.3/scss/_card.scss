@@ -47,6 +47,10 @@
     color: $white;
   }
 
+  .btn{
+    color: white;
+  }
+
   // Due to specificity of the above selector (`.card > .list-group`), we must
   // use a child selector here to prevent double borders.
   > .card-header + .list-group,
